@@ -14,8 +14,8 @@ export default function Home() {
           />
         </div>
         <div className=" p-4 sm:flex-1 text-white">
-          <h2 className="text-xl font-semibold">Watch Live Cricket</h2>
-          <p className="  mt-1 ">Without Any buffering</p>
+          <h2 className="text-xl font-semibold">Watch Live BPL 2025 </h2>
+          <p className="  mt-1 ">Without Any Cost</p>
           <Link href="/watchlive" className="btn mt-4  btn-primary  w-full ">
             Watch Now
           </Link>

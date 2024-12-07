@@ -81,8 +81,8 @@ const WatchLive = () => {
 
       <div className="flex justify-center">
         <div className="bg-white text-center capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
-      Bookmark It👇 If You Love It
-          this
+      Bookmark It👇 If You Like This
+          
         </div>
       </div>
       <div className="flex justify-center">

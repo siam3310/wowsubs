@@ -19,7 +19,7 @@ const Navbar = () => {
             className="btn btn-ghost normal-case  text-xl "
             href={"/"}
           >
-            Home Page
+            Home 
           </Link>
         </div>
       </div>

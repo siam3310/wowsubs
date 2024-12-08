@@ -65,22 +65,26 @@ const WatchLive = () => {
       </div>
 
       {/* Buttons Container */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 px-4">
-        {["Star Sports Hindi", "Star Sports English", "A Sports HD"].map(
-          (label, index) => (
-            <button
-              key={index}
-              className={`btn w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] py-3 font-bold rounded-lg text-lg transition-all duration-300 ${
-                activeTab === index + 1
-                  ? "bg-primary text-white border-4 border-indigo-500"
-                  : "bg-light text-dark"
-              }`}
-              onClick={() => handleTabClick(index + 1)}
-            >
-              {label}
-            </button>
-          )
-        )}
+      <div className="flex justify-center mt-4 px-4">
+        <div className="bg-gray-800 p-6 rounded-xl w-full sm:w-[90%] lg:w-[70%] xl:w-[60%]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {["Star Sports Hindi", "Star Sports English", "A Sports HD"].map(
+              (label, index) => (
+                <button
+                  key={index}
+                  className={`w-full py-3 font-bold text-lg rounded-lg transition-all duration-300 ${
+                    activeTab === index + 1
+                      ? "bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg transform scale-105"
+                      : "bg-white text-gray-700 border-2 border-gray-400 hover:bg-gray-200"
+                  }`}
+                  onClick={() => handleTabClick(index + 1)}
+                >
+                  {label}
+                </button>
+              )
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );

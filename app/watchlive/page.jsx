@@ -18,7 +18,7 @@ const WatchLive = () => {
 
       {/* Player Container */}
       {activeTab === 1 && (
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-0">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="90%"
@@ -30,7 +30,7 @@ const WatchLive = () => {
         </div>
       )}
       {activeTab === 2 && (
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-0">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="90%"
@@ -42,7 +42,7 @@ const WatchLive = () => {
         </div>
       )}
       {activeTab === 3 && (
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-0">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="90%"
@@ -55,12 +55,12 @@ const WatchLive = () => {
       )}
 
       {/* Bookmark It */}
-      <div className="w-full bg-white text-center py-2 font-bold text-lg capitalize mt-4">
+      <div className="w-full bg-white text-center py-2 font-bold text-lg capitalize mt-0">
         Bookmark It👇 to Stay With Us
       </div>
 
       {/* BPL Link */}
-      <div className="w-full bg-white text-center py-2 font-bold text-lg capitalize mt-2">
+      <div className="w-full bg-white text-center py-2 font-bold text-lg capitalize mt-0">
         BPL25.NETLIFY.APP
       </div>
 

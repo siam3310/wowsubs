@@ -72,15 +72,21 @@ const WatchLive = () => {
               key={index}
               className={`relative py-3 px-6 font-bold rounded-lg text-lg overflow-hidden group ${
                 activeTab === index + 1
-                  ? "bg-gradient-to-r from-purple-600 to-purple-800 text-white shadow-md scale-105"
-                  : "bg-gray-200 text-gray-800 hover:bg-gradient-to-r hover:from-purple-500 hover:to-purple-700 hover:text-white"
+                  ? "bg-gradient-to-r from-purple-600 to-purple-800 text-white scale-105"
+                  : "bg-gray-200 text-gray-800"
               }`}
               onClick={() => handleTabClick(index + 1)}
             >
+              {/* Slide Effect Background */}
               <span
-                className={`absolute inset-0 w-full h-full bg-gradient-to-r from-purple-600 to-purple-800 transition-transform duration-300 ease-out scale-x-0 group-hover:scale-x-100 origin-left`}
+                className={`absolute inset-0 w-full h-full bg-gradient-to-r from-purple-600 to-purple-800 transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out`}
               ></span>
-              <span className="relative z-10">{label}</span>
+              {/* Button Label */}
+              <span
+                className={`relative z-10 transition-colors duration-300 group-hover:text-white`}
+              >
+                {label}
+              </span>
             </button>
           )
         )}

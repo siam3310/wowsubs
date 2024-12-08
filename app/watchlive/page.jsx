@@ -54,25 +54,31 @@ const WatchLive = () => {
       )}
 
       {/* Buttons Container */}
-      <div className="tabs tabs-boxed xx-4 sm:mx-[2rem] xl:mx-[8rem] mt-2">
-        <a
-          className={`tab ${activeTab === 1 ? "tab-active" : ""}`}
+      <div className="flex flex-col items-center gap-4 mt-4">
+        <button
+          className={`w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] py-2 text-center border rounded ${
+            activeTab === 1 ? "bg-blue-500 text-white" : "bg-gray-200 text-black"
+          }`}
           onClick={() => handleTabClick(1)}
         >
           Star Sports Hindi
-        </a>
-        <a
-          className={`tab ${activeTab === 2 ? "tab-active" : ""}`}
+        </button>
+        <button
+          className={`w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] py-2 text-center border rounded ${
+            activeTab === 2 ? "bg-blue-500 text-white" : "bg-gray-200 text-black"
+          }`}
           onClick={() => handleTabClick(2)}
         >
           Star Sports English
-        </a>
-        <a
-          className={`tab ${activeTab === 3 ? "tab-active" : ""}`}
+        </button>
+        <button
+          className={`w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] py-2 text-center border rounded ${
+            activeTab === 3 ? "bg-blue-500 text-white" : "bg-gray-200 text-black"
+          }`}
           onClick={() => handleTabClick(3)}
         >
           A Sports HD
-        </a>
+        </button>
       </div>
 
       {/* Extra Information */}

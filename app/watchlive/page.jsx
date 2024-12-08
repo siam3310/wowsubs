@@ -15,6 +15,7 @@ const WatchLive = () => {
 
   return (
     <div className="w-full text-black">
+      {/* Tab Section */}
       <div className="tabs tabs-boxed xx-4 sm:mx-[2rem] xl:mx-[8rem] mt-5">
         <a
           className={`tab ${activeTab === 1 ? "tab-active" : ""}`}
@@ -34,15 +35,17 @@ const WatchLive = () => {
         >
           A Sports HD
         </a>
-
       </div>
+
+      {/* Video Player Section */}
       <div className="flex justify-center min-[550px]:mt-[1rem]">
         <div className="bg-white text-center capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
-         🌷 THANKS FOR VISIT THIS SITE 🌷
+          🌷 THANKS FOR VISIT THIS SITE 🌷
         </div>
       </div>
+
       {activeTab === 1 && (
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-4">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="100%"
@@ -54,9 +57,9 @@ const WatchLive = () => {
         </div>
       )}
       {activeTab === 2 && (
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-4">
           <iframe
-            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
+            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=star"
             width="100%"
             height="540"
             frameBorder="0"
@@ -66,9 +69,9 @@ const WatchLive = () => {
         </div>
       )}
       {activeTab === 3 && (
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-4">
           <iframe
-            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
+            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=asports"
             width="100%"
             height="540"
             frameBorder="0"
@@ -78,13 +81,14 @@ const WatchLive = () => {
         </div>
       )}
 
-
-      <div className="flex justify-center">
+      {/* Bookmark Section */}
+      <div className="flex justify-center mt-4">
         <div className="bg-white text-center capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
-      Bookmark It👇 If You Like This
-          
+          Bookmark It👇 If You Like This
         </div>
       </div>
+
+      {/* Website Name Section */}
       <div className="flex justify-center">
         <div className="bg-white text-center w-full capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
           <div className="text-xl ">

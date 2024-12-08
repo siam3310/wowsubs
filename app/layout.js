@@ -6,8 +6,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "BPL 2025 LIVE",
-  description: "A website where you can watch live BPL 2025 for free",
+  title: "BPL 2025 LIVE - bpl25.netlify.app",
+  description: "A website where you can watch live BPL 2025 for free - BPL25.NETLIFY.APP",
 };
 
 const containerStyle = {

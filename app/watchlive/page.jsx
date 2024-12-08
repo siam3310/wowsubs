@@ -18,7 +18,7 @@ const WatchLive = () => {
 
       {/* Player Container */}
       {activeTab === 1 && (
-        <div className="flex justify-center mt-0">
+        <div className="flex justify-center mt-4">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="90%"
@@ -30,7 +30,7 @@ const WatchLive = () => {
         </div>
       )}
       {activeTab === 2 && (
-        <div className="flex justify-center mt-0">
+        <div className="flex justify-center mt-4">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="90%"
@@ -42,7 +42,7 @@ const WatchLive = () => {
         </div>
       )}
       {activeTab === 3 && (
-        <div className="flex justify-center mt-0">
+        <div className="flex justify-center mt-4">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="90%"
@@ -55,12 +55,12 @@ const WatchLive = () => {
       )}
 
       {/* Bookmark It */}
-      <div className="w-full bg-white text-center py-2 font-bold text-lg capitalize mt-0">
+      <div className="w-full bg-white text-center py-2 font-bold text-lg capitalize mt-4">
         Bookmark It👇 to Stay With Us
       </div>
 
       {/* BPL Link */}
-      <div className="w-full bg-white text-center py-2 font-bold text-lg capitalize mt-0">
+      <div className="w-full bg-white text-center py-2 font-bold text-lg capitalize mt-2">
         BPL25.NETLIFY.APP
       </div>
 
@@ -70,7 +70,11 @@ const WatchLive = () => {
           (label, index) => (
             <button
               key={index}
-              className="btn btn-primary w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] py-3 font-bold"
+              className={`btn w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] py-3 font-bold rounded-lg text-lg transition-all duration-300 ${
+                activeTab === index + 1
+                  ? "bg-primary text-white border-4 border-indigo-500"
+                  : "bg-light text-dark"
+              }`}
               onClick={() => handleTabClick(index + 1)}
             >
               {label}

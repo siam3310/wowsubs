@@ -12,6 +12,11 @@ const WatchLive = () => {
   return (
     <div className="w-full text-black">
       {/* Player Container */}
+            <div className="flex justify-center min-[550px]:mt-[1rem]">
+        <div className="bg-white text-center capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
+          LOVE TO ALL
+        </div>
+      </div>
       {activeTab === 1 && (
         <div className="flex justify-center">
           <iframe
@@ -83,23 +88,21 @@ const WatchLive = () => {
         </button>
       </div>
 
-      {/* Extra Information */}
-      <div className="flex justify-center min-[550px]:mt-[1rem]">
-        <div className="bg-white text-center capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
-          LOVE TO ALL
-        </div>
-      </div>
-      <div className="flex justify-center">
+       <div className="flex justify-center">
         <div className="bg-white text-center capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
           Bookmark It👇 to Stay With Us
         </div>
-      </div>
+      </div>     
       <div className="flex justify-center">
         <div className="bg-white text-center w-full capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
           <div className="text-xl ">BPL25.NETLIFY.APP</div>
         </div>
       </div>
     </div>
+
+
+
+
   );
 };
 

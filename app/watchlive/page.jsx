@@ -3,10 +3,6 @@
 import React, { useState } from "react";
 
 const WatchLive = () => {
-  const iframeStyles = {
-    width: "100%", // Set the width to 100% of the parent container
-    height: "56.25%", // Set the height to maintain a 16:9 aspect ratio
-  };
   const [activeTab, setActiveTab] = useState(1);
 
   const handleTabClick = (tabNumber) => {
@@ -54,31 +50,31 @@ const WatchLive = () => {
       )}
 
       {/* Buttons Container */}
-      <div className="flex flex-col items-center gap-4 mt-4">
-        <button
-          className={`w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] py-2 text-center border rounded ${
-            activeTab === 1 ? "bg-blue-500 text-white" : "bg-gray-200 text-black"
+      <div className="flex flex-col items-center gap-4 mt-4 sm:mx-[2rem] xl:mx-[8rem]">
+        <a
+          className={`tab w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] text-center py-2 border rounded ${
+            activeTab === 1 ? "tab-active" : ""
           }`}
           onClick={() => handleTabClick(1)}
         >
           Star Sports Hindi
-        </button>
-        <button
-          className={`w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] py-2 text-center border rounded ${
-            activeTab === 2 ? "bg-blue-500 text-white" : "bg-gray-200 text-black"
+        </a>
+        <a
+          className={`tab w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] text-center py-2 border rounded ${
+            activeTab === 2 ? "tab-active" : ""
           }`}
           onClick={() => handleTabClick(2)}
         >
           Star Sports English
-        </button>
-        <button
-          className={`w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] py-2 text-center border rounded ${
-            activeTab === 3 ? "bg-blue-500 text-white" : "bg-gray-200 text-black"
+        </a>
+        <a
+          className={`tab w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] text-center py-2 border rounded ${
+            activeTab === 3 ? "tab-active" : ""
           }`}
           onClick={() => handleTabClick(3)}
         >
           A Sports HD
-        </button>
+        </a>
       </div>
 
       {/* Extra Information */}

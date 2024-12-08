@@ -20,7 +20,7 @@ const WatchLive = () => {
 
       {/* Player Container */}
       {activeTab === 1 && (
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-0">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="90%"
@@ -32,7 +32,7 @@ const WatchLive = () => {
         </div>
       )}
       {activeTab === 2 && (
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-0">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="90%"
@@ -44,7 +44,7 @@ const WatchLive = () => {
         </div>
       )}
       {activeTab === 3 && (
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-0">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="90%"
@@ -57,7 +57,7 @@ const WatchLive = () => {
       )}
 
       {/* Bookmark It and BPL Link below Player */}
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center mt-0">
         <div className="bg-white text-center capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
           Bookmark It👇 to Stay With Us
         </div>

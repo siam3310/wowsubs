@@ -12,55 +12,53 @@ const WatchLive = () => {
   return (
     <div className="w-full text-black">
       {/* LOVE TO ALL */}
-      <div className="w-full bg-white text-center py-2 font-bold text-lg capitalize">
+      <div className="w-full bg-gray-800 text-center py-2 font-bold text-lg text-white capitalize">
         LOVE TO ALL
       </div>
 
       {/* Player Container */}
-      {activeTab === 1 && (
-        <div className="flex justify-center mt-4">
-          <iframe
-            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
-            width="90%"
-            height="540"
-            frameBorder="0"
-            allowFullScreen={true}
-            className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
-          ></iframe>
+      <div className="flex justify-center mt-4">
+        <div className="bg-gray-800 p-4 rounded-xl w-full sm:w-[90%] lg:w-[70%] xl:w-[60%]">
+          {activeTab === 1 && (
+            <iframe
+              src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
+              width="90%"
+              height="540"
+              frameBorder="0"
+              allowFullScreen={true}
+              className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
+            ></iframe>
+          )}
+          {activeTab === 2 && (
+            <iframe
+              src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
+              width="90%"
+              height="540"
+              frameBorder="0"
+              allowFullScreen={true}
+              className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
+            ></iframe>
+          )}
+          {activeTab === 3 && (
+            <iframe
+              src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
+              width="90%"
+              height="540"
+              frameBorder="0"
+              allowFullScreen={true}
+              className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
+            ></iframe>
+          )}
         </div>
-      )}
-      {activeTab === 2 && (
-        <div className="flex justify-center mt-4">
-          <iframe
-            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
-            width="90%"
-            height="540"
-            frameBorder="0"
-            allowFullScreen={true}
-            className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
-          ></iframe>
-        </div>
-      )}
-      {activeTab === 3 && (
-        <div className="flex justify-center mt-4">
-          <iframe
-            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
-            width="90%"
-            height="540"
-            frameBorder="0"
-            allowFullScreen={true}
-            className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
-          ></iframe>
-        </div>
-      )}
+      </div>
 
       {/* Bookmark It */}
-      <div className="w-full bg-white text-center py-2 font-bold text-lg capitalize mt-4">
+      <div className="w-full bg-gray-800 text-center py-2 font-bold text-lg text-white capitalize mt-4">
         Bookmark It👇 to Stay With Us
       </div>
 
       {/* BPL Link */}
-      <div className="w-full bg-white text-center py-2 font-bold text-lg capitalize mt-2">
+      <div className="w-full bg-gray-800 text-center py-2 font-bold text-lg text-white capitalize mt-2">
         BPL25.NETLIFY.APP
       </div>
 

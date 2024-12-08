@@ -53,7 +53,17 @@ const WatchLive = () => {
           ></iframe>
         </div>
       )}
-
+       <div className="flex justify-center">
+        <div className="bg-white text-center capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
+          Bookmark It👇 to Stay With Us
+        </div>
+      </div>     
+      <div className="flex justify-center">
+        <div className="bg-white text-center w-full capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
+          <div className="text-xl ">BPL25.NETLIFY.APP</div>
+        </div>
+      </div>
+    </div>
       {/* Buttons Container */}
       <div className="flex flex-col items-center gap-4 mt-4 sm:mx-[2rem] xl:mx-[8rem]">
         <button
@@ -87,22 +97,6 @@ const WatchLive = () => {
           A Sports HD
         </button>
       </div>
-
-       <div className="flex justify-center">
-        <div className="bg-white text-center capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
-          Bookmark It👇 to Stay With Us
-        </div>
-      </div>     
-      <div className="flex justify-center">
-        <div className="bg-white text-center w-full capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
-          <div className="text-xl ">BPL25.NETLIFY.APP</div>
-        </div>
-      </div>
-    </div>
-
-
-
-
   );
 };
 

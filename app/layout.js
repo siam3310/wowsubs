@@ -2,7 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Nabar";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Script from 'next/script';
+import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +21,21 @@ const containerStyle = {
 };
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    // Create the script element
+    const script = document.createElement("script");
+    script.src = "https://www.counters-free.net/count/gsx3";
+    script.async = true;
+
+    // Append the script to the body
+    document.body.appendChild(script);
+
+    // Clean up the script when the component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <html lang="en">
       <head>
@@ -33,17 +48,8 @@ export default function RootLayout({ children }) {
           
           {/* Visitor Counter Container */}
           <div className="flex justify-center items-center p-4">
-            <div id="visitor-counter"></div>
+            <div id="visitor-counter">Loading visitor count...</div>
           </div>
-          
-          {/* Load the visitor counter script */}
-          <Script 
-            src="https://www.counters-free.net/count/gsx3" 
-            strategy="lazyOnload"
-            onLoad={() => {
-              console.log("Visitor counter script loaded.");
-            }}
-          />
         </div>
       </body>
     </html>

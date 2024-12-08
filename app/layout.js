@@ -29,13 +29,6 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
           <Analytics />
-          
-          {/* Visitor Counter Container */}
-          <div className="flex justify-center items-center p-4">
-            <div id="visitor-counter">
-              <script type="text/javascript" src="https://www.counters-free.net/count/gsx3"></script>
-            </div>
-          </div>
         </div>
       </body>
     </html>

@@ -11,6 +11,7 @@ export default function Home() {
             src={poster}
             className="h-full object-cover"
             alt="Cricket Poster"
+            borderRadius='5%'  
           />
         </div>
         <div className=" p-4 sm:flex-1 text-white">

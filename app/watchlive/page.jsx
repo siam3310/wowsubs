@@ -7,34 +7,13 @@ const WatchLive = () => {
     width: "100%", // Set the width to 100% of the parent container
     height: "56.25%", // Set the height to maintain a 16:9 aspect ratio
   };
-  const [activeTab, setActiveTab] = useState(7);
+  const [activeTab, setActiveTab] = useState(1);
 
   const handleTabClick = (tabNumber) => {
     setActiveTab(tabNumber);
   };
 
   return (
-    <div className="w-full text-black">
-      <div className="tabs tabs-boxed xx-4 sm:mx-[2rem] xl:mx-[8rem] mt-2">
-        <a
-          className={`tab ${activeTab === 1 ? "tab-active" : ""}`}
-          onClick={() => handleTabClick(1)}
-        >
-          Star Sports Hindi
-        </a>
-        <a
-          className={`tab ${activeTab === 2 ? "tab-active" : ""}`}
-          onClick={() => handleTabClick(2)}
-        >
-          Star Sports English
-        </a>
-        <a
-          className={`tab ${activeTab === 3 ? "tab-active" : ""}`}
-          onClick={() => handleTabClick(3)}
-        >
-          A Sports HD
-        </a>
-      </div>
       <div className="flex justify-center min-[550px]:mt-[1rem]">
         <div className="bg-white text-center capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
 LOVE TO ALL        </div>
@@ -89,7 +68,28 @@ LOVE TO ALL        </div>
           </div>
         </div>
       </div>
-    </div>
+    <div className="w-full text-black">
+      <div className="tabs tabs-boxed xx-4 sm:mx-[2rem] xl:mx-[8rem] mt-2">
+        <a
+          className={`tab ${activeTab === 1 ? "tab-active" : ""}`}
+          onClick={() => handleTabClick(1)}
+        >
+          Star Sports Hindi
+        </a>
+        <a
+          className={`tab ${activeTab === 2 ? "tab-active" : ""}`}
+          onClick={() => handleTabClick(2)}
+        >
+          Star Sports English
+        </a>
+        <a
+          className={`tab ${activeTab === 3 ? "tab-active" : ""}`}
+          onClick={() => handleTabClick(3)}
+        >
+          A Sports HD
+        </a>
+      </div> </div>      
+   
   );
 };
 

@@ -15,7 +15,7 @@ const WatchLive = () => {
 
   return (
     <div className="w-full text-black">
-      <div className="tabs tabs-boxed xx-4 sm:mx-[2rem] xl:mx-[8rem] mt-2">
+      <div className="tabs tabs-boxed xx-4 sm:mx-[2rem] xl:mx-[8rem] mt-5">
         <a
           className={`tab ${activeTab === 1 ? "tab-active" : ""}`}
           onClick={() => handleTabClick(1)}

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Nabar";
 import "./globals.css";
@@ -20,6 +21,13 @@ const containerStyle = {
 };
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://www.counters-free.net/count/gsx3";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <html lang="en">
       <head>
@@ -29,10 +37,10 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
           <Analytics />
-
+          
           {/* Visitor Counter Container */}
           <div className="flex justify-center items-center p-4">
-            <script type="text/javascript" src="https://www.counters-free.net/count/gsx3"></script>
+            <div id="visitor-counter"></div>
           </div>
         </div>
       </body>

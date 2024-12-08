@@ -18,7 +18,7 @@ const WatchLive = () => {
 
       {/* Player Container */}
       {activeTab === 1 && (
-        <div className="flex justify-center mt-0">
+        <div className="flex justify-center mt-4">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="90%"
@@ -30,7 +30,7 @@ const WatchLive = () => {
         </div>
       )}
       {activeTab === 2 && (
-        <div className="flex justify-center mt-0">
+        <div className="flex justify-center mt-4">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="90%"
@@ -42,7 +42,7 @@ const WatchLive = () => {
         </div>
       )}
       {activeTab === 3 && (
-        <div className="flex justify-center mt-0">
+        <div className="flex justify-center mt-4">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="90%"
@@ -55,12 +55,12 @@ const WatchLive = () => {
       )}
 
       {/* Bookmark It */}
-      <div className="w-full bg-white text-center py-2 font-bold text-lg capitalize mt-0">
+      <div className="w-full bg-white text-center py-2 font-bold text-lg capitalize mt-4">
         Bookmark It👇 to Stay With Us
       </div>
 
       {/* BPL Link */}
-      <div className="w-full bg-white text-center py-2 font-bold text-lg capitalize mt-0">
+      <div className="w-full bg-white text-center py-2 font-bold text-lg capitalize mt-2">
         BPL25.NETLIFY.APP
       </div>
 
@@ -77,13 +77,13 @@ const WatchLive = () => {
               }`}
               onClick={() => handleTabClick(index + 1)}
             >
-              {/* Slide Effect Background */}
+              {/* Gradient Background Fill on Hover */}
               <span
-                className={`absolute inset-0 w-full h-full bg-gradient-to-r from-purple-600 to-purple-800 transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out`}
+                className={`absolute inset-0 w-full h-full bg-gradient-to-r from-purple-600 to-purple-800 group-hover:opacity-100 opacity-0 transition-all duration-300 ease-out`}
               ></span>
-              {/* Button Label */}
+              {/* Button Label Reveal */}
               <span
-                className={`relative z-10 transition-colors duration-300 group-hover:text-white`}
+                className={`relative z-10 transition-all duration-300 ease-in-out group-hover:translate-x-0 group-hover:opacity-100 opacity-0 translate-x-4`}
               >
                 {label}
               </span>

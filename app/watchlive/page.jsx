@@ -11,14 +11,16 @@ const WatchLive = () => {
 
   return (
     <div className="w-full text-black">
-      {/* Player Container */}
-            <div className="flex justify-center min-[550px]:mt-[1rem]">
+      {/* LOVE TO ALL above Player */}
+      <div className="flex justify-center mt-4">
         <div className="bg-white text-center capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
           LOVE TO ALL
         </div>
       </div>
+
+      {/* Player Container */}
       {activeTab === 1 && (
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-4">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="90%"
@@ -30,7 +32,7 @@ const WatchLive = () => {
         </div>
       )}
       {activeTab === 2 && (
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-4">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="90%"
@@ -42,7 +44,7 @@ const WatchLive = () => {
         </div>
       )}
       {activeTab === 3 && (
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-4">
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="90%"
@@ -53,17 +55,19 @@ const WatchLive = () => {
           ></iframe>
         </div>
       )}
-       <div className="flex justify-center">
+
+      {/* Bookmark It and BPL Link below Player */}
+      <div className="flex justify-center mt-4">
         <div className="bg-white text-center capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
           Bookmark It👇 to Stay With Us
         </div>
-      </div>     
+      </div>
       <div className="flex justify-center">
         <div className="bg-white text-center w-full capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
           <div className="text-xl ">BPL25.NETLIFY.APP</div>
         </div>
       </div>
-    </div>
+
       {/* Buttons Container */}
       <div className="flex flex-col items-center gap-4 mt-4 sm:mx-[2rem] xl:mx-[8rem]">
         <button
@@ -97,6 +101,7 @@ const WatchLive = () => {
           A Sports HD
         </button>
       </div>
+    </div>
   );
 };
 

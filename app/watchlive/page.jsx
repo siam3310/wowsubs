@@ -70,18 +70,17 @@ const WatchLive = () => {
           (label, index) => (
             <button
               key={index}
-              className={`relative py-3 px-6 font-bold rounded-lg text-lg bg-gray-200 text-gray-800 overflow-hidden group ${
+              className={`relative py-3 px-6 font-bold rounded-lg text-lg overflow-hidden group ${
                 activeTab === index + 1
-                  ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white scale-105"
-                  : "hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:text-white"
+                  ? "bg-gradient-to-r from-purple-600 to-purple-800 text-white shadow-md scale-105"
+                  : "bg-gray-200 text-gray-800 hover:bg-gradient-to-r hover:from-purple-500 hover:to-purple-700 hover:text-white"
               }`}
               onClick={() => handleTabClick(index + 1)}
             >
-              {/* Ripple Effect */}
-              <span className="absolute inset-0 flex items-center justify-center">
-                <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-blue-400 rounded-full group-hover:w-56 group-hover:h-56 opacity-30"></span>
-              </span>
-              <span className="relative">{label}</span>
+              <span
+                className={`absolute inset-0 w-full h-full bg-gradient-to-r from-purple-600 to-purple-800 transition-transform duration-300 ease-out scale-x-0 group-hover:scale-x-100 origin-left`}
+              ></span>
+              <span className="relative z-10">{label}</span>
             </button>
           )
         )}

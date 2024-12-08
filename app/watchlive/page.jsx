@@ -34,7 +34,11 @@ A Sports HD
 </a>
 
 </div>
+<div className="flex justify-center min-[550px]:mt-[1rem]">
+<div className="bg-white text-center capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
 
+</div>
+</div>
 {activeTab === 1 && (
 <div className="flex justify-center">
 <iframe
@@ -73,10 +77,16 @@ className="aspect-video object-fill w-[100%] h-[56.25%] min-[550px]:w-[90%] sm:w
 )}
 
 
+<div className="flex justify-center">
+<div className="bg-white text-center capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
 
+</div>
+</div>
 <div className="flex justify-center">
 <div className="bg-white text-center w-full capitalize min-[550px]:w-[90%] sm:w-[80%] min-[1200px]:w-[70%] xl:w-[60%]">
-
+<div className="text-xl ">
+BPL25.NETLIFY.APP
+</div>
 </div>
 </div>
 </div>

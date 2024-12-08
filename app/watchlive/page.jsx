@@ -51,30 +51,36 @@ const WatchLive = () => {
 
       {/* Buttons Container */}
       <div className="flex flex-col items-center gap-4 mt-4 sm:mx-[2rem] xl:mx-[8rem]">
-        <a
-          className={`tab w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] text-center py-2 border rounded ${
-            activeTab === 1 ? "tab-active" : ""
+        <button
+          className={`w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] py-2 text-center border rounded font-bold transition-all duration-300 ${
+            activeTab === 1
+              ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg scale-105"
+              : "bg-gray-200 text-gray-700 hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:text-white"
           }`}
           onClick={() => handleTabClick(1)}
         >
           Star Sports Hindi
-        </a>
-        <a
-          className={`tab w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] text-center py-2 border rounded ${
-            activeTab === 2 ? "tab-active" : ""
+        </button>
+        <button
+          className={`w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] py-2 text-center border rounded font-bold transition-all duration-300 ${
+            activeTab === 2
+              ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg scale-105"
+              : "bg-gray-200 text-gray-700 hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:text-white"
           }`}
           onClick={() => handleTabClick(2)}
         >
           Star Sports English
-        </a>
-        <a
-          className={`tab w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] text-center py-2 border rounded ${
-            activeTab === 3 ? "tab-active" : ""
+        </button>
+        <button
+          className={`w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] py-2 text-center border rounded font-bold transition-all duration-300 ${
+            activeTab === 3
+              ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg scale-105"
+              : "bg-gray-200 text-gray-700 hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:text-white"
           }`}
           onClick={() => handleTabClick(3)}
         >
           A Sports HD
-        </a>
+        </button>
       </div>
 
       {/* Extra Information */}

@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 const WatchLive = () => {
 const iframeStyles = {
 width: "100%", // Set the width to 100% of the parent container

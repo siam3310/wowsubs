@@ -16,40 +16,38 @@ const WatchLive = () => {
         LOVE TO ALL
       </div>
 
-      {/* Player Container */}
+      {/* Player  */}
       <div className="flex justify-center mt-0">
-        <div className="bg-gray-800 p-4 rounded-xl w-full sm:w-[90%] lg:w-[70%] xl:w-[60%]">
-          {activeTab === 1 && (
-            <iframe
-              src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
-              width="90%"
-              height="540"
-              frameBorder="0"
-              allowFullScreen={true}
-              className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
-            ></iframe>
-          )}
-          {activeTab === 2 && (
-            <iframe
-              src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
-              width="90%"
-              height="540"
-              frameBorder="0"
-              allowFullScreen={true}
-              className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
-            ></iframe>
-          )}
-          {activeTab === 3 && (
-            <iframe
-              src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
-              width="90%"
-              height="540"
-              frameBorder="0"
-              allowFullScreen={true}
-              className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
-            ></iframe>
-          )}
-        </div>
+        {activeTab === 1 && (
+          <iframe
+            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
+            width="90%"
+            height="540"
+            frameBorder="0"
+            allowFullScreen={true}
+            className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
+          ></iframe>
+        )}
+        {activeTab === 2 && (
+          <iframe
+            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
+            width="90%"
+            height="540"
+            frameBorder="0"
+            allowFullScreen={true}
+            className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
+          ></iframe>
+        )}
+        {activeTab === 3 && (
+          <iframe
+            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
+            width="90%"
+            height="540"
+            frameBorder="0"
+            allowFullScreen={true}
+            className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
+          ></iframe>
+        )}
       </div>
 
       {/* Bookmark It */}

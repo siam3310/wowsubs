@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="backdrop-blur-sm mx-[2rem] min-[450px]:mx-[8rem] sm:mx-[2rem] xl:mx-[20rem]">
+    <main className="backdrop-blur-sm mx-[2rem] min-[450px]:mx-[8rem] sm:mx-[2rem] xl:mx-[20rem]" style={{ borderRadius: '15px' }} >
       <div className="flex flex-col sm:flex-row rounded-lg mt-8 ">
         <div className="sm:flex-1 ">
           <Image

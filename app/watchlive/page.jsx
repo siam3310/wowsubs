@@ -69,37 +69,22 @@ const WatchLive = () => {
       </div>
 
       {/* Buttons Container */}
-      <div className="flex flex-col items-center gap-4 mt-4 sm:mx-[2rem] xl:mx-[8rem]">
-        <button
-          className={`w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] py-2 text-center border rounded font-bold transition-all duration-300 ${
-            activeTab === 1
-              ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg scale-105"
-              : "bg-gray-200 text-gray-700 hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:text-white"
-          }`}
-          onClick={() => handleTabClick(1)}
-        >
-          Star Sports Hindi
-        </button>
-        <button
-          className={`w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] py-2 text-center border rounded font-bold transition-all duration-300 ${
-            activeTab === 2
-              ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg scale-105"
-              : "bg-gray-200 text-gray-700 hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:text-white"
-          }`}
-          onClick={() => handleTabClick(2)}
-        >
-          Star Sports English
-        </button>
-        <button
-          className={`w-full sm:w-[90%] lg:w-[70%] xl:w-[60%] py-2 text-center border rounded font-bold transition-all duration-300 ${
-            activeTab === 3
-              ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg scale-105"
-              : "bg-gray-200 text-gray-700 hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:text-white"
-          }`}
-          onClick={() => handleTabClick(3)}
-        >
-          A Sports HD
-        </button>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 px-4">
+        {["Star Sports Hindi", "Star Sports English", "A Sports HD"].map(
+          (label, index) => (
+            <button
+              key={index}
+              className={`py-3 px-6 font-bold rounded-lg text-lg transition-all duration-300 border shadow-md ${
+                activeTab === index + 1
+                  ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white scale-105 shadow-lg"
+                  : "bg-gray-200 text-gray-800 hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:text-white"
+              }`}
+              onClick={() => handleTabClick(index + 1)}
+            >
+              {label}
+            </button>
+          )
+        )}
       </div>
     </div>
   );

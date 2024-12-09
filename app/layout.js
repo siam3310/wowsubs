@@ -22,12 +22,25 @@ const containerStyle = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-      </head>
+      <head></head>
       <body className={inter.className}>
         <div className="h-screen" style={containerStyle}>
           <Navbar />
           {children}
+          {/* Visitor Counter */}
+          <div className="flex justify-center mt-4">
+            <a
+              href="https://www.freecounterstat.com"
+              title="web page counters free"
+            >
+              <img
+                src="https://counter6.optistats.ovh/private/freecounterstat.php?c=sy78cebaseknw8yde4e6jr5b6x3etltl"
+                border="0"
+                title="web page counters free"
+                alt="web page counters free"
+              />
+            </a>
+          </div>
           <Analytics />
         </div>
       </body>

@@ -40,7 +40,7 @@ const WatchLive = () => {
         )}
         {activeTab === 3 && (
           <iframe
-            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
+            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=supercricket"
             width="90%"
             height="540"
             frameBorder="0"
@@ -62,9 +62,9 @@ const WatchLive = () => {
 
       {/* Buttons Container */}
       <div className="flex justify-center mt-4 px-4">
-        <div className="bg-gray-800 p-6 rounded-xl w-full sm:w-[90%] lg:w-[70%] xl:w-[60%]">
+        <div className="bg-gray-800 p-6 rounded-xl w-full sm:w-[98%] lg:w-[70%] xl:w-[60%]">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {["Willow", "Sky Sports Cricket", "A Sports HD"].map(
+            {["Willow", "Sky Sports Cricket", "Super Sports Cricket"].map(
               (label, index) => (
                 <button
                   key={index}

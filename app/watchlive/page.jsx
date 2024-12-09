@@ -66,7 +66,7 @@ const WatchLive = () => {
       </div>
 
       {/* BPL Link */}
-      <div className="w-full bg-gray-800 text-center py-0.5 font-bold text-lg text-white capitalize mt-0">
+      <div className="w-full bg-gray-800 text-center py-0 font-bold text-lg text-white capitalize mt-0">
         BPL25.NETLIFY.APP
       </div>
 

@@ -35,12 +35,22 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        {/* ShareThis Script */}
+        <script
+          type="text/javascript"
+          src="https://platform-api.sharethis.com/js/sharethis.js#property=675691ca7545a7001ae3a7a7&product=sop&source=platform"
+          async="async"
+        ></script>
       </head>
       <body className={inter.className}>
         <div className="h-screen" style={containerStyle}>
           <Navbar />
           {children}
           <Analytics />
+          {/* ShareThis Widget at the Bottom */}
+          <div className="absolute bottom-0 left-0 w-full flex justify-center py-2">
+            <div className="sharethis-inline-reaction-buttons"></div>
+          </div>
         </div>
       </body>
     </html>

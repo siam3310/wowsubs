@@ -35,22 +35,31 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        {/* ShareThis Script */}
-        <script
-          type="text/javascript"
-          src="https://platform-api.sharethis.com/js/sharethis.js#property=675691ca7545a7001ae3a7a7&product=sop&source=platform"
-          async="async"
-        ></script>
       </head>
       <body className={inter.className}>
         <div className="h-screen" style={containerStyle}>
           <Navbar />
           {children}
-          <Analytics />
-          {/* ShareThis Widget at the Bottom */}
-          <div className="absolute bottom-0 left-0 w-full flex justify-center bg-gray-800 py-1">
-            <div className="sharethis-inline-reaction-buttons"></div>
+
+          {/* Widget iframe placed above ShareThis */}
+          <div className="widget-container" style={{ position: "relative", zIndex: 10 }}>
+            <iframe
+              src="https://cwidget.crictimes.org/?v=1.1&a=000000&c=ffffff&lc=ff0000"
+              style={{ width: "100%", minHeight: "460px", border: "none" }}
+              frameBorder="0"
+              scrolling="yes"
+            ></iframe>
           </div>
+
+          {/* ShareThis Widget */}
+          <script
+            type="text/javascript"
+            src="https://platform-api.sharethis.com/js/sharethis.js#property=675691ca7545a7001ae3a7a7&product=sop&source=platform"
+            async="async"
+          ></script>
+          <div className="sharethis-inline-reaction-buttons" style={{ position: "relative", zIndex: 5 }}></div>
+
+          <Analytics />
         </div>
       </body>
     </html>

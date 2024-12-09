@@ -40,17 +40,6 @@ export default function RootLayout({ children }) {
         <div className="h-screen" style={containerStyle}>
           <Navbar />
           {children}
-
-          {/* Widget iframe placed above ShareThis */}
-          <div className="widget-container" style={{ position: "relative", zIndex: 10 }}>
-            <iframe
-              src="https://cwidget.crictimes.org/?v=1.1&a=000000&c=ffffff&lc=ff0000"
-              style={{ width: "100%", minHeight: "460px", border: "none" }}
-              frameBorder="0"
-              scrolling="yes"
-            ></iframe>
-          </div>
-
           {/* ShareThis Widget */}
           <script
             type="text/javascript"

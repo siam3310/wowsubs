@@ -48,6 +48,16 @@ const WatchLive = () => {
             className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
           ></iframe>
         )}
+        {activeTab === 4 && (
+          <iframe
+            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=tenspk"
+            width="90%"
+            height="540"
+            frameBorder="0"
+            allowFullScreen={true}
+            className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
+          ></iframe>
+        )}
       </div>
 
       {/* Bookmark It */}
@@ -63,8 +73,8 @@ const WatchLive = () => {
       {/* Buttons Container */}
       <div className="flex justify-center mt-4 px-4">
         <div className="bg-gray-800 p-6 rounded-xl w-full sm:w-[98%] lg:w-[70%] xl:w-[60%]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {["Willow", "Sky Sports Cricket", "Super Sports Cricket"].map(
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {["Willow", "Sky Sports Cricket", "Super Sports Cricket", "Ten Cricket"].map(
               (label, index) => (
                 <button
                   key={index}

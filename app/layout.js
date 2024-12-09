@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
           {children}
           <Analytics />
           {/* ShareThis Widget at the Bottom */}
-          <div className="absolute bottom-0 left-0 w-full flex justify-center py-2">
+          <div className="absolute bottom-0 left-0 w-full flex justify-center bg-gray-800 py-1">
             <div className="sharethis-inline-reaction-buttons"></div>
           </div>
         </div>

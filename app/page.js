@@ -28,6 +28,16 @@ export default function Home() {
           </Link>
         </div>
       </div>
+
+      {/* Widget positioned below the card */}
+      <div className="mt-6">
+        <iframe
+          src="https://cwidget.crictimes.org/?v=1.1&a=000000&c=ffffff&lc=ff0000"
+          style={{ width: "100%", minHeight: "460px", border: "none" }}
+          frameBorder="0"
+          scrolling="yes"
+        ></iframe>
+      </div>
     </main>
   );
 }

@@ -22,13 +22,32 @@ const containerStyle = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-      </head>
+      <head></head>
       <body className={inter.className}>
         <div className="h-screen" style={containerStyle}>
           <Navbar />
           {children}
           <Analytics />
+          {/* Footer with Visitor Counter */}
+          <footer className="text-center bg-black text-white py-4 mt-4">
+            <div className="text-sm">Visitor Count:</div>
+            <div id="sfc8ktlkhm54j9j76qtmtjd1q5kcmtz7j6k"></div>
+            <script
+              type="text/javascript"
+              src="https://counter6.optistats.ovh/private/counter.js?c=8ktlkhm54j9j76qtmtjd1q5kcmtz7j6k&down=async"
+              async
+            ></script>
+            <noscript>
+              <a href="https://www.freecounterstat.com" title="free counter">
+                <img
+                  src="https://counter6.optistats.ovh/private/freecounterstat.php?c=8ktlkhm54j9j76qtmtjd1q5kcmtz7j6k"
+                  border="0"
+                  title="free counter"
+                  alt="free counter"
+                />
+              </a>
+            </noscript>
+          </footer>
         </div>
       </body>
     </html>

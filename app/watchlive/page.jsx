@@ -13,7 +13,7 @@ const WatchLive = () => {
     <div className="w-full text-black">
       {/* LOVE TO ALL */}
       <div className="w-full bg-gray-800 text-center py-2 font-bold text-lg text-white capitalize">
-        LOVE TO ALL
+        💟LOVE TO ALL💟
       </div>
 
       {/* Player  */}

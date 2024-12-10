@@ -19,17 +19,17 @@ export default function Home() {
         </div>
         <div className="p-4 sm:flex-1 text-white">
           <h2 className="text-xl font-bold">Watch Live BPL 2025</h2>
-          <p className="mt-1 bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 font-semibold">
+          <p className="mt-1 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 via-orange-500 via-green-400 via-blue-500 to-cyan-500 font-semibold">
             Without Any Cost
           </p>
-          {/* Button with Enhanced Multi-Color Gradient Bar */}
+          {/* Button with Enhanced Tech Gradient Bar */}
           <div className="relative w-full mt-4">
             <Link
               href="/watchlive"
               className="block py-3 px-6 text-center text-lg font-bold rounded-lg bg-gray-900 text-white relative overflow-hidden"
             >
-              {/* Enhanced Gradient Bar */}
-              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-pink-500 via-orange-400 via-yellow-500 via-green-400 via-blue-500 to-indigo-500"></div>
+              {/* Tech-Inspired Gradient Bar */}
+              <div className="absolute top-0 left-0 w-full h-[1.4px] bg-gradient-to-r from-purple-500 via-pink-500 via-orange-500 via-green-400 via-blue-500 to-cyan-500"></div>
               Watch Now
             </Link>
           </div>

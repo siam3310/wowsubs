@@ -19,10 +19,10 @@ export default function Home() {
             />
           </div>
           <div className="p-4 sm:flex-1 text-white">
-            <h2 className="text-xl font-bold text-white p-2 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500">
-              Watch Live BPL 2025
-            </h2>
-            <p className="mt-1">Without Any Cost</p>
+            <h2 className="text-xl font-bold">Watch Live BPL 2025</h2>
+            <p className="mt-1 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500 font-semibold">
+              Without Any Cost
+            </p>
             <Link
               href="/watchlive"
               className="w-full mt-4 inline-block py-3 px-6 text-center text-lg font-bold rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"

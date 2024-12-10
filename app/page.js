@@ -22,12 +22,18 @@ export default function Home() {
           <p className="mt-1 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500 font-semibold">
             Without Any Cost
           </p>
-          <Link
-            href="/watchlive"
-            className="w-full mt-4 inline-block py-3 px-6 text-center text-lg font-bold rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
-          >
-            Watch Now
-          </Link>
+          <div className="relative w-full mt-4">
+            {/* Gradient Line */}
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-t-md"></div>
+            {/* Button */}
+            <Link
+              href="/watchlive"
+              className="block py-3 px-6 text-center text-lg font-bold rounded-lg bg-gray-900 text-white"
+              style={{ position: "relative", zIndex: 10 }}
+            >
+              Watch Now
+            </Link>
+          </div>
         </div>
       </div>
     </main>

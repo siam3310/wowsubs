@@ -22,14 +22,14 @@ export default function Home() {
           <p className="mt-1 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500 font-semibold">
             Without Any Cost
           </p>
-          {/* Button with Gradient Bar */}
+          {/* Button with Thicker Gradient Bar */}
           <div className="relative w-full mt-4">
             <Link
               href="/watchlive"
               className="block py-3 px-6 text-center text-lg font-bold rounded-lg bg-gray-900 text-white relative overflow-hidden"
             >
-              {/* Gradient Bar as Top Portion of Button */}
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500"></div>
+              {/* Thicker Gradient Bar */}
+              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500"></div>
               Watch Now
             </Link>
           </div>

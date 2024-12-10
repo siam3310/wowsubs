@@ -18,7 +18,9 @@ export default function Home() {
           />
         </div>
         <div className="p-4 sm:flex-1 text-white">
-          <h2 className="text-xl font-semibold">Watch Live BPL 2025</h2>
+          <h2 className="text-xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            Watch Live BPL 2025
+          </h2>
           <p className="mt-1">Without Any Cost</p>
           <Link
             href="/watchlive"

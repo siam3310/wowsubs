@@ -29,7 +29,7 @@ export default function Home() {
               className="block py-3 px-6 text-center text-lg font-bold rounded-lg bg-gray-900 text-white relative overflow-hidden"
             >
               {/* Thicker Gradient Bar */}
-              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500"></div>
+              <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500"></div>
               Watch Now
             </Link>
           </div>

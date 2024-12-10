@@ -29,7 +29,7 @@ export default function Home() {
               className="block py-3 px-6 text-center text-lg font-bold rounded-lg bg-gray-900 text-white relative overflow-hidden"
             >
               {/* Tech-Inspired Gradient Bar */}
-              <div className="absolute top-0 left-0 w-full h-[1.4px] bg-gradient-to-r from-purple-500 via-pink-500 via-orange-500 via-green-400 via-blue-500 to-cyan-500"></div>
+              <div className="absolute top-0 left-0 w-full h-1.4 bg-gradient-to-r from-purple-500 via-pink-500 via-orange-500 via-green-400 via-blue-500 to-cyan-500"></div>
               Watch Now
             </Link>
           </div>

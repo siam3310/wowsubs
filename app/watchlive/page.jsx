@@ -16,7 +16,7 @@ const WatchLive = () => {
         💟LOVE TO ALL💟
       </div>
 
-      {/* Player  */}
+      {/* Player */}
       <div className="flex justify-center mt-0">
         {activeTab === 1 && (
           <iframe
@@ -61,27 +61,27 @@ const WatchLive = () => {
       </div>
 
       {/* Bookmark It */}
-      <div className="w-full bg-gray-800 text-center py-0.5 font-bold text-lg text-white capitalize mt-0">
+      <div className="w-full bg-gray-800 text-center py-1 font-bold text-base text-white capitalize mt-1">
         Bookmark It👇 to Stay With Us
       </div>
 
       {/* BPL Link */}
-      <div className="w-full bg-gray-800 text-center py-0 font-bold text-lg text-white capitalize mt-0">
+      <div className="w-full bg-gray-800 text-center py-1 font-bold text-base text-white capitalize mt-0">
         BPL25.NETLIFY.APP
       </div>
 
       {/* Buttons Container */}
-      <div className="flex justify-center mt-4 px-4">
-        <div className="bg-gray-800 p-6 rounded-xl w-full sm:w-[98%] lg:w-[70%] xl:w-[60%]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="flex justify-center mt-3 px-3">
+        <div className="bg-gray-800 p-4 rounded-lg w-full sm:w-[95%] lg:w-[65%] xl:w-[55%]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {["Willow", "Sky Sports Cricket", "Super Sports Cricket", "Ten Cricket"].map(
               (label, index) => (
                 <button
                   key={index}
-                  className={`w-full py-3 font-bold text-lg rounded-lg transition-all duration-300 ${
+                  className={`w-full py-2 text-base font-bold rounded-md transition-all duration-300 ${
                     activeTab === index + 1
-                      ? "bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg transform scale-105"
-                      : "bg-white text-gray-700 border-2 border-gray-400 hover:bg-gray-200"
+                      ? "bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-md transform scale-105"
+                      : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-100"
                   }`}
                   onClick={() => handleTabClick(index + 1)}
                 >

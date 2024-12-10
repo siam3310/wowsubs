@@ -40,14 +40,6 @@ export default function RootLayout({ children }) {
         <div className="h-screen" style={containerStyle}>
           <Navbar />
           {children}
-          {/* ShareThis Widget */}
-          <script
-            type="text/javascript"
-            src="https://platform-api.sharethis.com/js/sharethis.js#property=675691ca7545a7001ae3a7a7&product=sop&source=platform"
-            async="async"
-          ></script>
-          <div className="sharethis-inline-reaction-buttons" style={{ position: "relative", zIndex: 5 }}></div>
-
           <Analytics />
         </div>
       </body>

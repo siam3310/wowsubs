@@ -4,35 +4,37 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main
-      className="backdrop-blur-sm mx-[2rem] min-[450px]:mx-[8rem] sm:mx-[2rem] xl:mx-[20rem]"
-      style={{ borderRadius: "15px" }}
-    >
-      <div className="flex flex-col sm:flex-row rounded-lg mt-8">
-        <div className="sm:flex-1">
-          <Image
-            src={poster}
-            className="h-full object-cover"
-            alt="Cricket Poster"
-            style={{ borderRadius: "5%" }}
-          />
+    <>
+      <main
+        className="backdrop-blur-sm mx-[2rem] min-[450px]:mx-[8rem] sm:mx-[2rem] xl:mx-[20rem]"
+        style={{ borderRadius: "15px" }}
+      >
+        <div className="flex flex-col sm:flex-row rounded-lg mt-8">
+          <div className="sm:flex-1">
+            <Image
+              src={poster}
+              className="h-full object-cover"
+              alt="Cricket Poster"
+              style={{ borderRadius: "5%" }}
+            />
+          </div>
+          <div className="p-4 sm:flex-1 text-white">
+            <h2 className="text-xl font-bold text-white p-2 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500">
+              Watch Live BPL 2025
+            </h2>
+            <p className="mt-1">Without Any Cost</p>
+            <Link
+              href="/watchlive"
+              className="w-full mt-4 inline-block py-3 px-6 text-center text-lg font-bold rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            >
+              Watch Now
+            </Link>
+          </div>
         </div>
-        <div className="p-4 sm:flex-1 text-white">
-          <h2 className="text-xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-            Watch Live BPL 2025
-          </h2>
-          <p className="mt-1">Without Any Cost</p>
-          <Link
-            href="/watchlive"
-            className="w-full mt-4 inline-block py-3 px-6 text-center text-lg font-bold rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
-          >
-            Watch Now
-          </Link>
-        </div>
-      </div>
+      </main>
 
-      {/* Widget positioned below the card */}
-      <div className="mt-6">
+      {/* Widget Section */}
+      <div className="mt-6 mx-[2rem] min-[450px]:mx-[8rem] sm:mx-[2rem] xl:mx-[20rem]">
         <iframe
           src="https://cwidget.crictimes.org/?v=1.1&a=000000&c=ffffff&lc=ff0000"
           style={{ width: "100%", minHeight: "460px", border: "none" }}
@@ -40,6 +42,6 @@ export default function Home() {
           scrolling="yes"
         ></iframe>
       </div>
-    </main>
+    </>
   );
 }

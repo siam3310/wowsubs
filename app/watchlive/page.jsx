@@ -61,7 +61,7 @@ const WatchLive = () => {
       </div>
 
       {/* Bookmark It */}
-      <div className="w-full bg-gray-800 text-center py-1 font-bold text-base text-white capitalize mt-1">
+      <div className="w-full bg-gray-800 text-center py-1 font-bold text-base text-white capitalize mt-0">
         Bookmark It👇 to Stay With Us
       </div>
 

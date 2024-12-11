@@ -20,18 +20,18 @@ const WatchLive = () => {
       <div className="flex justify-center mt-0">
         {activeTab === 1 && (
           <iframe
-            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
-            width="90%"
+            src="https://cinebuzz.netfy.live/stream/tsportsjadoo.html"
+            width="100%"
             height="540"
             frameBorder="0"
             allowFullScreen={true}
             className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
           ></iframe>
-        )}
+        )}  
         {activeTab === 2 && (
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=skyscric"
-            width="90%"
+            width="100%"
             height="540"
             frameBorder="0"
             allowFullScreen={true}
@@ -40,8 +40,8 @@ const WatchLive = () => {
         )}
         {activeTab === 3 && (
           <iframe
-            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=supercricket"
-            width="90%"
+            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
+            width="100%"
             height="540"
             frameBorder="0"
             allowFullScreen={true}
@@ -51,7 +51,7 @@ const WatchLive = () => {
         {activeTab === 4 && (
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=tenspk"
-            width="90%"
+            width="100%"
             height="540"
             frameBorder="0"
             allowFullScreen={true}
@@ -74,7 +74,7 @@ const WatchLive = () => {
       <div className="flex justify-center mt-3 px-3">
         <div className="bg-gray-800 p-4 rounded-lg w-full sm:w-[95%] lg:w-[65%] xl:w-[55%]">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {["Willow", "Sky Sports Cricket", "Super Sports Cricket", "Ten Cricket"].map(
+            {["Tsports-Jadoo", "Sky Sports Cricket", "Willow", "Ten Cricket"].map(
               (label, index) => (
                 <button
                   key={index}

@@ -11,8 +11,9 @@ export const metadata = {
   verification: { google: "keVTh4CE7NNuJ2uokcjoiAlHfUlakVP7ThDhRKijtCc" },
 };
 
+// Gradient background style
 const containerStyle = {
-  backgroundImage: "url(assets/bg-image.webp)",
+  backgroundImage: "linear-gradient(to right, #ff7e5f, #feb47b)", // Gradient color
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center center",
   backgroundAttachment: "fixed",
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Google Tag */}
+        {/* Google Analytics Tag */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-C00L020W1Z"></script>
         <script
           dangerouslySetInnerHTML={{

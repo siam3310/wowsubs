@@ -30,6 +30,17 @@ const WatchLive = () => {
         )}  
         {activeTab === 2 && (
           <iframe
+            src="https://siamstools.netlify.app/tv/play.html?id=1"
+            width="100%"
+            height="540"
+            frameBorder="0"
+            allowFullScreen={true}
+            className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
+          ></iframe>
+        )}
+
+        {activeTab === 3 && (
+          <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=skyscric"
             width="100%"
             height="540"
@@ -38,7 +49,7 @@ const WatchLive = () => {
             className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
           ></iframe>
         )}
-        {activeTab === 3 && (
+        {activeTab === 4 && (
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=willowusa"
             width="100%"
@@ -48,7 +59,7 @@ const WatchLive = () => {
             className="aspect-video object-fill w-[100%] h-[56.25%] sm:w-[80%] lg:w-[70%] xl:w-[60%]"
           ></iframe>
         )}
-        {activeTab === 4 && (
+        {activeTab === 5 && (
           <iframe
             src="https://cinebuzz.netfy.live/crichd/play.php?cricid=tenspk"
             width="100%"
@@ -74,7 +85,7 @@ const WatchLive = () => {
       <div className="flex justify-center mt-3 px-3">
         <div className="bg-gray-800 p-4 rounded-lg w-full sm:w-[95%] lg:w-[65%] xl:w-[55%]">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {["Tsports-Jadoo", "Sky Sports Cricket", "Willow", "Ten Cricket"].map(
+            {["Tsports-Jadoo", "Gazi TV" , "Sky Sports Cricket", "Willow", "Ten Cricket"].map(
               (label, index) => (
                 <button
                   key={index}

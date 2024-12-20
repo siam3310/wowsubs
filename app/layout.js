@@ -11,15 +11,6 @@ export const metadata = {
   verification: { google: "keVTh4CE7NNuJ2uokcjoiAlHfUlakVP7ThDhRKijtCc" },
 };
 
-// Gradient background style
-const containerStyle = {
-  backgroundImage: "linear-gradient(to right, #ff7e5f, #feb47b)", // Gradient color
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center center",
-  backgroundAttachment: "fixed",
-  backgroundSize: "cover",
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -38,10 +29,17 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
-        <div className="h-screen" style={containerStyle}>
-          <Navbar />
-          {children}
-          <Analytics />
+        {/* Tech-Inspired Gradient Background */}
+        <div className="relative min-h-screen">
+          {/* Gradient Bar at the Top */}
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 via-pink-500 via-orange-500 via-green-400 via-blue-500 to-cyan-500 z-10"></div>
+          
+          {/* Main Content */}
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-900 via-gray-900 to-black z-0">
+            <Navbar />
+            <main className="relative z-20">{children}</main>
+            <Analytics />
+          </div>
         </div>
       </body>
     </html>

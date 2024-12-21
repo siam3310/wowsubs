@@ -41,7 +41,7 @@ const WatchLive = () => {
 
         {activeTab === 3 && (
           <iframe
-            src="https://cinebuzz.netfy.live/crichd/play.php?cricid=skyscric"
+            src="https://cinebuzz.netfy.live/nagorik.m3u8"
             width="100%"
             height="540"
             frameBorder="0"
@@ -85,7 +85,7 @@ const WatchLive = () => {
       <div className="flex justify-center mt-3 px-3">
         <div className="bg-gray-800 p-4 rounded-lg w-full sm:w-[95%] lg:w-[65%] xl:w-[55%]">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {["Tsports-Jadoo", "Gazi TV" , "Sky Sports Cricket", "Willow", "Ten Cricket"].map(
+            {["Tsports-Jadoo", "Gazi TV" , "Nagorik TV", "Willow", "Ten Cricket"].map(
               (label, index) => (
                 <button
                   key={index}

@@ -20,7 +20,7 @@ const WatchLive = () => {
       <div className="flex justify-center mt-0">
         {activeTab === 1 && (
           <iframe
-            src="https://cinebuzz.netfy.live/stream/tsportsjadoo.html"
+            src="https://siamstools.netlify.app/tv/tsportsjadoo.html"
             width="100%"
             height="540"
             frameBorder="0"

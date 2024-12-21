@@ -78,7 +78,7 @@ const WatchLive = () => {
 
       {/* BPL Link */}
       <div className="w-full bg-gray-800 text-center py-1 font-bold text-base text-white capitalize mt-0">
-        BPL25.NETLIFY.APP
+        BPL25.VERCEL.APP
       </div>
 
       {/* Buttons Container */}
